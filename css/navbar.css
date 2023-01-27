@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5ff;
+}
+.navbar{
+    background-color: red;
+    display: flex;
+    align-items: center;
+
+}
+
+/*nav bar logo side*/
+.navbar .logo-container{
+    width: 37%;
+}
+.navbar .logo-container a{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    border: 3px solid white;
+    margin: 30px;
+}
+/*nav bar menu side*/
+.navbar .right-nav-side {
+    width: 50%;
+}
+.navbar .right-nav-side ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .right-nav-side ul li{
+    list-style: none;
+    margin: 18px 10px;
+    
+}
+.navbar .right-nav-side ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media screen and (max-width:970px) {
+.navbar .logo-container {
+width: 28%;
+}
+    .navbar .right-nav-side {
+    width: 65%;
+}
+}
+
+@media screen and (max-width:750px) {
+    .navbar{
+    flex-direction: column;
+
+}
+ .navbar .logo-container {
+    width: 33%;
+    justify-content: center;
+    display: flex;
+}
+    .navbar .right-nav-side {
+    width: 70%;
+}
+.navbar .right-nav-side ul li a{
+    font-size: 17px;
+
+}
+}
+@media screen and (max-width:590px) {
+    .navbar .logo-container a{
+  
+    font-size: 25px;
+    
+    margin: 20px;
+}
+.navbar .right-nav-side {
+width: 70%;
+}
+    .navbar .right-nav-side ul li a{
+    font-size: 14px;
+
+}
+.navbar .right-nav-side ul li {
+
+margin: 6px 20px;
+}
+
+}
+    @media screen and (max-width:530px) {
+        .navbar .logo-container {
+    width: 43%;
+    
+}
+        .navbar .right-nav-side {
+          width: 100%;
+    }
+    .navbar .right-nav-side ul li {
+
+margin: 6px 15px;
+}
+}
+@media screen and (max-width:400px) {
+    .navbar .logo-container {
+    width: 60%;
+    }
+    .navbar .right-nav-side ul li {
+margin: 6px 7px;
+}        
+
+}
+@media screen and (max-width:330px) {
+    .navbar .right-nav-side ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
